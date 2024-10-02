@@ -19,10 +19,13 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--Dark-Blue);
+  flex-direction: column;
+  gap: 3rem;
 }
 main {
   background-color: var(--dark-grayish-blue);
   display: flex;
+
   /* height: 40vh; */
   padding: 2rem;
   flex-direction: column;
@@ -64,8 +67,9 @@ main {
   box-shadow: 0px 0px 1rem var(--neon-green);
   animation: rotate 0.2s infinite linear;
 }
+
 #dice {
-  animation: rotate 1.2s infinite linear;
+  /* animation: rotate 1.2s infinite linear; */
 }
 @keyframes rotate {
   0% {
@@ -74,4 +78,30 @@ main {
   100% {
     transform: rotate(360deg);
   }
+}
+.advice-list {
+  border: 1px solid var(--neon-green);
+  background-color: var(--dark-grayish-blue);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.advices {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.advices h1 {
+  color: rgba(8, 120, 195, 0.774);
+  border-bottom: 1px solid var(--grayish-blue);
+}
+.advices p {
+  color: rgba(255, 255, 255, 0.468);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
 }
